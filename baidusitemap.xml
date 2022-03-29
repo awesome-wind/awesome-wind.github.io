@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://awesome-wind.github.io//blog/2022/03/blog.html</loc>
+    <loc>https://awesome-wind.github.io//blog/2022/03/media-sdk-encoding.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2022-03-29-blog.html</loc>
@@ -73,10 +73,10 @@
     <loc>https://awesome-wind.github.io/bak/2020-09-15-entrogy-kld.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2020-03-07-call-derived-function.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2020-02-24-right-reference.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2020-02-24-right-reference.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2020-03-07-call-derived-function.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2020-03-14-bayes-theorem.html</loc>
@@ -94,10 +94,10 @@
     <loc>https://awesome-wind.github.io/bak/2019-12-23-sigmoid-gradient.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2020-01-17-assert-debug-release.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2020-02-10-linux-shadowsocks-config.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2020-02-10-linux-shadowsocks-config.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2020-01-17-assert-debug-release.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2020-02-10-linux-startup-scripts.html</loc>
@@ -106,13 +106,13 @@
     <loc>https://awesome-wind.github.io/bak/2020-02-21-thread-local.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-11-18-neural-network-quantization.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2019-11-29-stl-binary.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-12-04-entropy.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-11-29-stl-binary.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2019-11-18-neural-network-quantization.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-12-09-pca-repost.html</loc>
@@ -163,16 +163,16 @@
     <loc>https://awesome-wind.github.io/bak/2019-07-16-thread-safe-reentrant-function.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-08-26-clion-show-dynamic-array.html</loc>
-    <lastmod>2022-03-29</lastmod>
-  </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-07-27-memory-pooling.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-05-16-thundernet.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2019-08-26-clion-show-dynamic-array.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-06-02-vps.html</loc>
+    <lastmod>2022-03-29</lastmod>
+  </url>  <url>
+    <loc>https://awesome-wind.github.io/bak/2019-05-16-thundernet.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-06-11-struct-bit-field.html</loc>
@@ -202,25 +202,25 @@
     <loc>https://awesome-wind.github.io/bak/2019-04-18-cpp-concurrent-3.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-04-22-dp-calculate-turns.html</loc>
-    <lastmod>2022-03-29</lastmod>
-  </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-04-18-valgrind-memory-leaky.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-04-23-cpp-concurrent-4.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-03-28-hexo-render-mathjax.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2019-04-22-dp-calculate-turns.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-03-14-decision-tree.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-03-28-virtualenv-tensorboard.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2019-04-11-cpp-concurrent-1.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-04-11-cpp-concurrent-1.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2019-03-28-hexo-render-mathjax.html</loc>
+    <lastmod>2022-03-29</lastmod>
+  </url>  <url>
+    <loc>https://awesome-wind.github.io/bak/2019-03-28-virtualenv-tensorboard.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-04-15-cpp-bfs-dfs.html</loc>
@@ -232,13 +232,13 @@
     <loc>https://awesome-wind.github.io/bak/2019-02-25-svm-kernel.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
+    <loc>https://awesome-wind.github.io/bak/2019-03-08-prune-net.html</loc>
+    <lastmod>2022-03-29</lastmod>
+  </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-03-01-bootstrap-bagging-boost.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-03-07-pca-math.html</loc>
-    <lastmod>2022-03-29</lastmod>
-  </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2019-03-08-prune-net.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-02-01-python-copy-virtualenv.html</loc>
@@ -253,9 +253,6 @@
     <loc>https://awesome-wind.github.io/bak/2019-02-20-vsftpd.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-12-22-cpp-cow.html</loc>
-    <lastmod>2022-03-29</lastmod>
-  </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2018-12-23-jupyter-remote-ip.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
@@ -265,16 +262,19 @@
     <loc>https://awesome-wind.github.io/bak/2019-01-03-cpp-custom-iostream.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
+    <loc>https://awesome-wind.github.io/bak/2018-12-22-cpp-cow.html</loc>
+    <lastmod>2022-03-29</lastmod>
+  </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-01-11-jupyter-virtualenvs.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2019-01-18-cpp-static-member.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-11-19-pip-upgrade-issue.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2018-11-21-awk-simple.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-11-21-awk-simple.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2018-11-19-pip-upgrade-issue.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2018-12-05-cpp-extern-array-pointer.html</loc>
@@ -313,19 +313,19 @@
     <loc>https://awesome-wind.github.io/bak/2018-09-07-kmeans.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-09-07-map-calc.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2018-09-16-get-pid.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-09-16-get-pid.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2018-09-07-map-calc.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2018-09-22-git-delete-submodule.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-08-19-cpp-right-reference.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2018-08-21-mxnet-install-ndarray.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-08-21-mxnet-install-ndarray.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2018-08-19-cpp-right-reference.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2018-08-22-mxnet-symbol.html</loc>
@@ -379,10 +379,10 @@
     <loc>https://awesome-wind.github.io/bak/2018-05-10-io-block-sync.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-01-06-batch-normalization.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2018-02-18-docker-image-container.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2018-02-18-docker-image-container.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2018-01-06-batch-normalization.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2018-03-14-now-feels.html</loc>
@@ -403,10 +403,10 @@
     <loc>https://awesome-wind.github.io/bak/2017-11-02-C++11-14-2.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2017-12-03-python-multiprocess.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2017-11-24-numpy-axis.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2017-11-24-numpy-axis.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2017-12-03-python-multiprocess.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2017-08-09-java-antlr.html</loc>
@@ -430,22 +430,22 @@
     <loc>https://awesome-wind.github.io/bak/2017-06-30-wireshark-local.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2017-07-30-quick-primers.html</loc>
-    <lastmod>2022-03-29</lastmod>
-  </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2017-07-03-go-jsonrpc.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2017-07-13-permucation-stl.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
-    <loc>https://awesome-wind.github.io/bak/2017-05-30-python-pil.html</loc>
+    <loc>https://awesome-wind.github.io/bak/2017-07-30-quick-primers.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2017-05-30-live-cherry.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2017-05-30-python-stack.html</loc>
+    <lastmod>2022-03-29</lastmod>
+  </url>  <url>
+    <loc>https://awesome-wind.github.io/bak/2017-05-30-python-pil.html</loc>
     <lastmod>2022-03-29</lastmod>
   </url>  <url>
     <loc>https://awesome-wind.github.io/bak/2017-06-01-windows-glog.html</loc>
