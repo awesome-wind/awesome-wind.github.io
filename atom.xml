@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>拾趣，志人</title>
+  
+  <subtitle>虚怀若谷，大智若愚</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://awesome-wind.github.io/"/>
+  <updated>2022-03-29T08:56:16.186Z</updated>
+  <id>https://awesome-wind.github.io/</id>
+  
+  <author>
+    <name>awesome-wind</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blog</title>
+    <link href="https://awesome-wind.github.io//blog/2022/03/blog.html"/>
+    <id>https://awesome-wind.github.io//blog/2022/03/blog.html</id>
+    <published>2022-03-29T07:10:28.000Z</published>
+    <updated>2022-03-29T08:56:16.186Z</updated>
+    
+    <content type="html"><![CDATA[<p>media sdk 编码器创建过程与编码过程</p><a id="more"></a><p>i have a blog</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;media sdk 编码器创建过程与编码过程&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Codec" scheme="https://awesome-wind.github.io/categories/Codec/"/>
+    
+    
+      <category term="video" scheme="https://awesome-wind.github.io/tags/video/"/>
+    
+      <category term="rtc" scheme="https://awesome-wind.github.io/tags/rtc/"/>
+    
+  </entry>
+  
+</feed>
