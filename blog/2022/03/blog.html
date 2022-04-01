@@ -59,19 +59,19 @@
 </script>
 
   <meta name="description" content="前置条件：下载并安装好media sdk工程  使用visual studio打开默认的工程sample_encode.sln后，在vs中可以看到整个工程的代码结构。程序的启动点位于sample_encode.cpp中的main函数，包含了编码器创建，编码过程以及销毁流程。">
-<meta name="keywords" content="windows,h265,h264,svc,video">
+<meta name="keywords" content="windows,qsv,encoder">
 <meta property="og:type" content="article">
-<meta property="og:title" content="media-sdk-encoding">
-<meta property="og:url" content="https://awesome-wind.github.io/blog/2022/03/media-sdk-encoding.html">
+<meta property="og:title" content="mediasdk 编码">
+<meta property="og:url" content="https://awesome-wind.github.io/blog/2022/03/blog.html">
 <meta property="og:site_name" content="拾趣，志人">
 <meta property="og:description" content="前置条件：下载并安装好media sdk工程  使用visual studio打开默认的工程sample_encode.sln后，在vs中可以看到整个工程的代码结构。程序的启动点位于sample_encode.cpp中的main函数，包含了编码器创建，编码过程以及销毁流程。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2022-03-29T15:12:45.731Z">
+<meta property="og:updated_time" content="2022-04-01T10:52:28.411Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="media-sdk-encoding">
+<meta name="twitter:title" content="mediasdk 编码">
 <meta name="twitter:description" content="前置条件：下载并安装好media sdk工程  使用visual studio打开默认的工程sample_encode.sln后，在vs中可以看到整个工程的代码结构。程序的启动点位于sample_encode.cpp中的main函数，包含了编码器创建，编码过程以及销毁流程。">
   <link rel="alternate" href="/atom.xml" title="拾趣，志人" type="application/atom+xml">
-  <link rel="canonical" href="https://awesome-wind.github.io/blog/2022/03/media-sdk-encoding">
+  <link rel="canonical" href="https://awesome-wind.github.io/blog/2022/03/blog">
 
 
 <script id="page-configurations">
@@ -85,7 +85,7 @@
   };
 </script>
 
-  <title>media-sdk-encoding | 拾趣，志人</title>
+  <title>mediasdk 编码 | 拾趣，志人</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -137,7 +137,7 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <h1 class="site-subtitle" itemprop="description">虚怀若谷，大智若愚</h1>
+        <h1 class="site-subtitle" itemprop="description">白水日常需拾趣，书迹学知尤志人</h1>
       
   </div>
 
@@ -236,11 +236,11 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://awesome-wind.github.io/blog/2022/03/media-sdk-encoding.html">
+    <link itemprop="mainEntityOfPage" href="https://awesome-wind.github.io/blog/2022/03/blog.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="awesome-wind">
-      <meta itemprop="description" content="虚怀若谷，大智若愚">
+      <meta itemprop="description" content="白水日常需拾趣，书迹学知尤志人">
       <meta itemprop="image" content="/images/avatar_128.ico">
     </span>
 
@@ -248,7 +248,7 @@
       <meta itemprop="name" content="拾趣，志人">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">media-sdk-encoding
+        <h2 class="post-title" itemprop="name headline">mediasdk 编码
 
           
         </h2>
@@ -264,11 +264,19 @@
                 
               
 
-              <time title="创建时间：2022-03-29 22:55:32 / 修改时间：23:12:45" itemprop="dateCreated datePublished" datetime="2022-03-29T22:55:32+08:00">2022-03-29</time>
+              <time title="创建时间：2022-03-29 15:10:28" itemprop="dateCreated datePublished" datetime="2022-03-29T15:10:28+08:00">2022-03-29</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-01 18:52:28" itemprop="dateModified" datetime="2022-04-01T18:52:28+08:00">2022-04-01</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -302,7 +310,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>4.8k</span>
+              <span>4.7k</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -339,7 +347,7 @@
 </blockquote>
 <p><strong>编码过程</strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sts = pPipeline-&gt;Run();</span><br><span class="line"><span class="keyword">if</span>(sts  == MX_ERR_DEVICE_LOST || sts == MFX_ERR_DEVICE_FAILED)&#123;</span><br><span class="line">    sts = pPipeline-&gt;ResetDevice();</span><br><span class="line">    sts = pPipeline-&gt;ResetMFXComponents(&amp;Params);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p><strong>销毁逻辑</strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pPipeline-&gt;Close();</span><br></pre></td></tr></table></figure></p>
-<h2 id="传参解析"><a href="#传参解析" class="headerlink" title="传参解析"></a>传参解析</h2><p>外部传递参数存在可选与必选参数</p>
+<h2 id="传参解析"><a href="#传参解析" class="headerlink" title="传参解析"></a>传参解析</h2><p>外部传递参数存在可选与必选参数，</p>
 <h4 id="必选参数"><a href="#必选参数" class="headerlink" title="必选参数"></a>必选参数</h4><div class="table-container">
 <table>
 <thead>
@@ -380,24 +388,40 @@
 <td>-vbr/-cbr/-qvbr/-avbr/-cqp</td>
 <td>-vcm</td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
 <tr>
-<td>I帧间隔</td>
-<td>参考帧数</td>
-<td>HEVC P帧参考帧数</td>
-<td>svc 设置</td>
+<th>I帧间隔</th>
+<th>参考帧数</th>
+<th>HEVC P帧参考帧数</th>
+<th>svc 设置</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>-idr_internal</td>
 <td>-x numRef</td>
 <td>-num_active_P numRef</td>
 <td>-AvcTemporalLayers “1 2 4 0 0 0 0 0”</td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
 <tr>
-<td>slice 数量</td>
-<td>GOP size</td>
-<td>B帧</td>
-<td>其他常用</td>
+<th>slice 数量</th>
+<th>GOP size</th>
+<th>B帧</th>
+<th>其他常用</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>-num_slice</td>
 <td>-g size</td>
@@ -411,36 +435,43 @@
 <p>HEVC中参考帧数与svc设置是互斥的，直接会导致编码器初始化失败.参数设置详见readme-encode_windows.pdf</p>
 </blockquote>
 <h4 id="解析过程"><a href="#解析过程" class="headerlink" title="解析过程"></a>解析过程</h4><p>默认设置使用硬编，无camera，参考帧数量为0，I420格式，而后通过匹配外部传入参数对pParams进行赋值,e.g.<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="number">0</span> == msdk_strcmp(strInput[i],MSDK_STRING(<span class="string">"-sw"</span>))&#123;</span><br><span class="line">    pParams-&gt;bUseHWLib = <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>外部传入的所有的参数均通过此方式对默认值进行覆盖。</p>
-<h2 id="Pipeline创建与初始化"><a href="#Pipeline创建与初始化" class="headerlink" title="Pipeline创建与初始化"></a>Pipeline创建与初始化</h2><p>pipeline创建时需要选择哪一种pipeline结构并进行初始化，初始化过程包含编码器的选择与其初始化等</p>
-<h4 id="pipeline-reset"><a href="#pipeline-reset" class="headerlink" title="pipeline reset"></a>pipeline reset</h4><p>mediaSDK提供了三种pipeline模式</p>
+<h2 id="Pipeline创建与初始化"><a href="#Pipeline创建与初始化" class="headerlink" title="Pipeline创建与初始化"></a>Pipeline创建与初始化</h2><h4 id="pipeline-reset"><a href="#pipeline-reset" class="headerlink" title="pipeline reset"></a>pipeline reset</h4><p>mediaSDK提供了三种pipeline模式</p>
 <ul>
 <li>CRegionEncodingPipeline : 区域编码模式，不支持硬编</li>
 <li>CUserPipeline：自定义编码pipeline，可设入插件，进行图像处理，demo给出的为旋转图像能力</li>
-<li>CEncodingPipeline：普通编码模式</li>
+<li>CEncodingPipeline：普通编码模式<h4 id="pipeline-init"><a href="#pipeline-init" class="headerlink" title="pipeline init"></a>pipeline init</h4></li>
 </ul>
-<h4 id="pipeline-init"><a href="#pipeline-init" class="headerlink" title="pipeline init"></a>pipeline init</h4><p><strong>依据参数与限制条件，选择最合适的硬件/软件实现</strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mfxInitParamlWrap initPar;</span><br><span class="line">initPar.Version.Major = <span class="number">1</span>;</span><br><span class="line">initPar.Version.Minor = <span class="number">0</span>;</span><br><span class="line">initPar.GPUCopy = nParams-&gt;gpuCopy;</span><br><span class="line">mfxStatus sts = GetImpl(*pParams,initPar.Implementation);</span><br></pre></td></tr></table></figure></p>
-<p><strong>使用获取到的编码器去初始化mfxsession</strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sts = m_mfxSession.InitEx(initPar);</span><br></pre></td></tr></table></figure></p>
-<p><strong>获取系统版本，检验特性支持的api版本，满足时加载编码器</strong></p>
+<ol>
+<li><p>依据参数与限制条件，选择最合适的硬件/软件实现</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mfxInitParamlWrap initPar;</span><br><span class="line">initPar.Version.Major = <span class="number">1</span>;</span><br><span class="line">initPar.Version.Minor = <span class="number">0</span>;</span><br><span class="line">initPar.GPUCopy = nParams-&gt;gpuCopy;</span><br><span class="line">mfxStatus sts = GetImpl(*pParams,initPar.Implementation);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用获取到的编码器去初始化mfxsession</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sts = m_mfxSession.InitEx(initPar);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取系统版本，检验特性支持的api版本，满足时加载编码器</p>
+<blockquote>
 <ul>
 <li>如果有自定义的编码器，则加载自定义的</li>
 <li>如果没有指定编码器的path或者guid<ul>
 <li>检查mediasdk当前版本是否默认含有上述选择出的编解码器，有则加载</li>
-<li>如果mediasdk无该默认编解码器，则判断不支持</li>
+<li>如果mediasdk无该默认编解码器，则判断不支持<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">mfxVersion version;</span><br><span class="line">sts = MFXQueryVersion(m_mfxSession,&amp;version);</span><br><span class="line"></span><br><span class="line"><span class="comment">// do some check by version</span></span><br><span class="line"><span class="keyword">if</span> (pParams-&gt;pluginParams.type == MFX_PLUGINLOAD_TYPE_FILE &amp;&amp; msdk_strnlen(pParams-&gt;pluginParams.strPluginPath, <span class="keyword">sizeof</span>(pParams-&gt;pluginParams.strPluginPath)))&#123;</span><br><span class="line">    m_pUserModule.reset(<span class="keyword">new</span> MFXVideoUSER(m_mfxSession));</span><br><span class="line">    m_pPlugin.reset(LoadPlugin(MFX_PLUGINTYPE_VIDEO_ENCODE, m_mfxSession, pParams-&gt;pluginParams.pluginGuid, <span class="number">1</span>, pParams-&gt;pluginParams.strPluginPath, (mfxU32)msdk_strnlen(pParams-&gt;pluginParams.strPluginPath, <span class="keyword">sizeof</span>(pParams-&gt;pluginParams.strPluginPath))));</span><br><span class="line">    <span class="keyword">if</span> (m_pPlugin.get() == <span class="literal">NULL</span>) sts = MFX_ERR_UNSUPPORTED;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">bool</span> isDefaultPlugin = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (AreGuidsEqual(pParams-&gt;pluginParams.pluginGuid, MSDK_PLUGINGUID_NULL)) &#123;</span><br><span class="line">        mfxIMPL impl = pParams-&gt;bUseHWLib ? MFX_IMPL_HARDWARE : MFX_IMPL_SOFTWARE;</span><br><span class="line">        pParams-&gt;pluginParams.pluginGuid = msdkGetPluginUID(impl, MSDK_VENCODE, pParams-&gt;CodecId);</span><br><span class="line">        isDefaultPlugin = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!AreGuidsEqual(pParams-&gt;pluginParams.pluginGuid, MSDK_PLUGINGUID_NULL)) &#123;</span><br><span class="line">        m_pPlugin.reset(LoadPlugin(MFX_PLUGINTYPE_VIDEO_ENCODE, m_mfxSession, pParams-&gt;pluginParams.pluginGuid, <span class="number">1</span>));</span><br><span class="line">        <span class="keyword">if</span> (m_pPlugin.get() == <span class="literal">NULL</span>) sts = MFX_ERR_UNSUPPORTED;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 </ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">mfxVersion version;</span><br><span class="line">sts = MFXQueryVersion(m_mfxSession,&amp;version);</span><br><span class="line"></span><br><span class="line"><span class="comment">// do some check by version</span></span><br><span class="line"><span class="keyword">if</span> (pParams-&gt;pluginParams.type == MFX_PLUGINLOAD_TYPE_FILE &amp;&amp; msdk_strnlen(pParams-&gt;pluginParams.strPluginPath, <span class="keyword">sizeof</span>(pParams-&gt;pluginParams.strPluginPath)))&#123;</span><br><span class="line">    m_pUserModule.reset(<span class="keyword">new</span> MFXVideoUSER(m_mfxSession));</span><br><span class="line">    m_pPlugin.reset(LoadPlugin(MFX_PLUGINTYPE_VIDEO_ENCODE, m_mfxSession, pParams-&gt;pluginParams.pluginGuid, <span class="number">1</span>, pParams-&gt;pluginParams.strPluginPath, (mfxU32)msdk_strnlen(pParams-&gt;pluginParams.strPluginPath, <span class="keyword">sizeof</span>(pParams-&gt;pluginParams.strPluginPath))));</span><br><span class="line">    <span class="keyword">if</span> (m_pPlugin.get() == <span class="literal">NULL</span>) sts = MFX_ERR_UNSUPPORTED;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">bool</span> isDefaultPlugin = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (AreGuidsEqual(pParams-&gt;pluginParams.pluginGuid, MSDK_PLUGINGUID_NULL)) &#123;</span><br><span class="line">        mfxIMPL impl = pParams-&gt;bUseHWLib ? MFX_IMPL_HARDWARE : MFX_IMPL_SOFTWARE;</span><br><span class="line">        pParams-&gt;pluginParams.pluginGuid = msdkGetPluginUID(impl, MSDK_VENCODE, pParams-&gt;CodecId);</span><br><span class="line">        isDefaultPlugin = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!AreGuidsEqual(pParams-&gt;pluginParams.pluginGuid, MSDK_PLUGINGUID_NULL)) &#123;</span><br><span class="line">        m_pPlugin.reset(LoadPlugin(MFX_PLUGINTYPE_VIDEO_ENCODE, m_mfxSession, pParams-&gt;pluginParams.pluginGuid, <span class="number">1</span>));</span><br><span class="line">        <span class="keyword">if</span> (m_pPlugin.get() == <span class="literal">NULL</span>) sts = MFX_ERR_UNSUPPORTED;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>创建编码器与初始化</strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">m_pmfxENC = <span class="keyword">new</span> MFXVideoENCODE(m_mfxSession); <span class="comment">// create encoder</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// if no camera, file input system is inited.</span></span><br><span class="line"><span class="keyword">if</span>(!isV4L2InputEnable)&#123;</span><br><span class="line">    sts = m_FileReader.Init(pParams-&gt;InputFiles, nParams-&gt;FileInputFourCC, readerShift);</span><br><span class="line">&#125;</span><br><span class="line">sts = InitFileWriters(pParams); <span class="comment">// init output file</span></span><br><span class="line"></span><br><span class="line">sts = CretaeAlloctor();  <span class="comment">// memory init used by encoding</span></span><br><span class="line">sts = InitMfxEncParams(pParams); <span class="comment">// collect all kinds of encoder params </span></span><br><span class="line">sts = InitMfxVppParams(pParams); <span class="comment">// init vpp if needed</span></span><br><span class="line">sts = ResetMFXComponents(pParams); <span class="comment">// init task pool and set params into encoder</span></span><br><span class="line">InitV4L2Pipeline(pParams); <span class="comment">// init camera if V4L2 is opened</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="encode"><a href="#encode" class="headerlink" title="encode"></a>encode</h2><p>创建for循环，循环进行以下流程的处理</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">读帧：LoadNextFrame(mfxFrameSurface1)-&gt;</span><br><span class="line">编码：m_mfxENC-&gt;EncodeFrameAsync(mfxEncodeCtrl,mfxFrameSurface1,&amp;mfxBitstreamWrapper,&amp;mfxSyncPoint)-&gt;</span><br><span class="line">写流：WriteNextFrame(&amp;mfxBitstream，<span class="keyword">bool</span>)</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>创建编码器与初始化</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">m_pmfxENC = <span class="keyword">new</span> MFXVideoENCODE(m_mfxSession); <span class="comment">// create encoder</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// if no camera, file input system is inited.</span></span><br><span class="line"><span class="keyword">if</span>(!isV4L2InputEnable)&#123;</span><br><span class="line">    sts = m_FileReader.Init(pParams-&gt;InputFiles, nParams-&gt;FileInputFourCC, readerShift);</span><br><span class="line">&#125;</span><br><span class="line">sts = InitFileWriters(pParams); <span class="comment">// init output file</span></span><br><span class="line"></span><br><span class="line">sts = CretaeAlloctor();  <span class="comment">// memory init used by encoding</span></span><br><span class="line">sts = InitMfxEncParams(pParams); <span class="comment">// collect all kinds of encoder params </span></span><br><span class="line">sts = InitMfxVppParams(pParams); <span class="comment">// init vpp if needed</span></span><br><span class="line">sts = ResetMFXComponents(pParams); <span class="comment">// init task pool and set params into encoder</span></span><br><span class="line">InitV4L2Pipeline(pParams); <span class="comment">// init camera if V4L2 is opened</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="encode"><a href="#encode" class="headerlink" title="encode"></a>encode</h2><p>创建for循环，循环进行以下流程的处理<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">读帧：LoadNextFrame(mfxFrameSurface1)-&gt;</span><br><span class="line">编码：m_mfxENC-&gt;EncodeFrameAsync(mfxEncodeCtrl,mfxFrameSurface1,&amp;mfxBitstreamWrapper,&amp;mfxSyncPoint)-&gt;</span><br><span class="line">写流：WriteNextFrame(&amp;mfxBitstream，<span class="keyword">bool</span>)</span><br></pre></td></tr></table></figure></p>
 <h4 id="ExtendSurface创建"><a href="#ExtendSurface创建" class="headerlink" title="ExtendSurface创建"></a>ExtendSurface创建</h4><p>extendSurface包含了编码器的数据信息与控制信息，从文件中的读取的帧会按照特定格式存放于ExtendSurface.pSurface中，ExtendSurface.pCtrl则带有帧信息，有一定的控制作用，例如编I帧等<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">ExtendSurface</span> &#123;</span></span><br><span class="line">    mfxFrameSurface1 *pSurface;  <span class="comment">// 输入编码器的帧数据</span></span><br><span class="line">    mfxEncodeCtrl    *pCtrl;  <span class="comment">// 编码器控制参数</span></span><br><span class="line">    mfxSyncPoint      Syncp;  <span class="comment">//同步时机</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ExtendedSurface encSurface,preencSurface,vppSurface = &#123;&#125;;</span><br><span class="line">m_nEncSurfIdx = GetFreeSurface(m_pEncSurfaces, m_EncResponse.NumFrameActual);</span><br><span class="line">preencSurface.pSurface = vppSurface.pSurface = &amp;m_pEncSurfaces[m_nEncSurfIdx];</span><br></pre></td></tr></table></figure></p>
 <h4 id="sTask创建"><a href="#sTask创建" class="headerlink" title="sTask创建"></a>sTask创建</h4><p>sTask会创建任务池，承担两项任务职能</p>
 <ul>
 <li>取得编码后的码流数据</li>
-<li>将码流数据写入文件</li>
+<li>将码流数据写入文件<br>每次需要执行代码时，便获取当前的空任务，获取时会将当前的任务队列中的码流写文件任务执行，编码完成后会将编码后的数据填入<code>pCurrentTask.mfxBS</code>中。<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sts = GetFreeTask(&amp;pCurrentTask);</span><br><span class="line">    WriteNextFrame(mfxBitstream,<span class="keyword">bool</span>) <span class="function">in <span class="title">GetFreeTask</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">EncodeOneFrame</span><span class="params">(encSurface, pCurrentTask)</span></span>;</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p>每次需要执行代码时，便获取当前的空任务，获取时会将当前的任务队列中的码流写文件任务执行，编码完成后会将编码后的数据填入<code>pCurrentTask.mfxBS</code>中。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sts = GetFreeTask(&amp;pCurrentTask);</span><br><span class="line">    WriteNextFrame(mfxBitstream,<span class="keyword">bool</span>) <span class="function">in <span class="title">GetFreeTask</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">EncodeOneFrame</span><span class="params">(encSurface, pCurrentTask)</span></span>;</span><br></pre></td></tr></table></figure></p>
 
     </div>
 
@@ -457,7 +488,7 @@
     <strong>本文作者： </strong>awesome-wind</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://awesome-wind.github.io/blog/2022/03/media-sdk-encoding.html" title="media-sdk-encoding">https://awesome-wind.github.io/blog/2022/03/media-sdk-encoding.html</a>
+    <a href="https://awesome-wind.github.io/blog/2022/03/blog.html" title="mediasdk 编码">https://awesome-wind.github.io/blog/2022/03/blog.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -474,13 +505,9 @@
             
               <a href="/tags/windows/" rel="tag"># windows</a>
             
-              <a href="/tags/h265/" rel="tag"># h265</a>
+              <a href="/tags/qsv/" rel="tag"># qsv</a>
             
-              <a href="/tags/h264/" rel="tag"># h264</a>
-            
-              <a href="/tags/svc/" rel="tag"># svc</a>
-            
-              <a href="/tags/video/" rel="tag"># video</a>
+              <a href="/tags/encoder/" rel="tag"># encoder</a>
             
           </div>
         
@@ -545,7 +572,7 @@
       src="/images/avatar_128.ico"
       alt="awesome-wind">
   <p class="site-author-name" itemprop="name">awesome-wind</p>
-  <div class="site-description" itemprop="description">虚怀若谷，大智若愚</div>
+  <div class="site-description" itemprop="description">白水日常需拾趣，书迹学知尤志人</div>
 </div>
   <nav class="site-state motion-element">
       <div class="site-state-item site-state-posts">
@@ -594,7 +621,13 @@
         
           
         
-        <span class="site-state-item-count">5</span>
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -774,7 +807,7 @@
       repo: 'awesome-wind.github.io',
       owner: 'awesome-wind',
       admin: ['awesome-wind'],
-      id: 'f62d59646f60ac8452d6ac82db33860a',
+      id: 'bb816b9f5f9bfe19afd8275982d21cc0',
         language: 'zh-CN',
       
       distractionFreeMode: 'true'
